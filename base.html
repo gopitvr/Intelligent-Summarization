@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multimodal Summarizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="background:#f5f7fa;">
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand">Summarizer</a>
+
+    <div>
+      <a href="/" class="btn btn-light btn-sm">Home</a>
+      <a href="/login" class="btn btn-success btn-sm">Login</a>
+      <a href="/register" class="btn btn-primary btn-sm">Register</a>
+      <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

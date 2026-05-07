@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register | Summarix AI</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+
+body{
+    background: linear-gradient(135deg,#cdb4db,#ffc8dd,#a2d2ff);
+    color:#2b2b2b;
+}
+
+/* NAVBAR */
+.navbar{
+    width:90%;
+    margin:20px auto;
+    padding:15px 30px;
+    background:rgba(20,15,30,0.85);
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.logo i{
+    background:linear-gradient(45deg,#ff6ec4,#7873f5);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.nav-links a{
+    color:#ddd;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.nav-links a.active{
+    background:linear-gradient(45deg,#ff6ec4,#7873f5);
+    color:#fff;
+}
+
+.nav-links a:hover{
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    width:90%;
+    margin:60px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* LEFT CONTENT */
+.hero-text{
+    max-width:45%;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text span{
+    font-weight:300;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+/* REGISTER CARD */
+.register-card{
+    width:420px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(15px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* FORM GRID */
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+}
+
+.input-group label{
+    font-size:13px;
+    margin-bottom:4px;
+}
+
+.input-group input{
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    outline:none;
+}
+
+/* FULL WIDTH */
+.full{
+    grid-column:span 2;
+}
+
+/* BUTTON */
+.btn{
+    width:100%;
+    padding:12px;
+    background:linear-gradient(45deg,#ff6ec4,#7873f5);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+/* LOGIN LINK */
+.login-link{
+    margin-top:10px;
+    text-align:center;
+    font-size:14px;
+}
+
+.login-link a{
+    text-decoration:none;
+    font-weight:bold;
+    color:#333;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{flex-direction:column;text-align:center;}
+    .hero-text{max-width:100%;}
+    .register-card{width:100%;}
+    .form-grid{grid-template-columns:1fr;}
+    .full{grid-column:span 1;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-brain"></i> Summarix AI
+    </div>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/admin">Admin</a>
+        <a class="active" href="/login">User</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-text">
+        <h1>Create <span>Account</span></h1>
+
+        <p>
+            Join our intelligent multimodal summarization platform. 
+            Register to analyze websites, generate insights, and experience 
+            powerful AI-driven content understanding using transformer models.
+        </p>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div class="register-card">
+
+        <h2 style="text-align:center;margin-bottom:15px;">
+            <i class="fa fa-user-plus"></i> Register
+        </h2>
+
+        <form method="POST">
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Mobile</label>
+                    <input type="text" name="mobile" placeholder="Enter mobile number" required>
+                </div>
+
+                <div class="input-group full">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Choose username" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Create password" required>
+                </div>
+
+            </div>
+
+            <button class="btn">Register</button>
+
+        </form>
+
+        <!-- LOGIN LINK -->
+        <div class="login-link">
+            Already have an account? <a href="/login">Login</a>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

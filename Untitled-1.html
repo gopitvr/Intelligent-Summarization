@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HiTech | Multimodal Summarization</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+
+body{
+    background: linear-gradient(135deg,#cdb4db,#ffc8dd,#a2d2ff);
+    color:#2b2b2b;
+}
+
+/* NAVBAR */
+.navbar{
+    width:90%;
+    margin:20px auto;
+    padding:15px 30px;
+    background:rgba(20,15,30,0.85);
+    border-radius:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(12px);
+}
+
+.logo{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.logo i{
+    background:linear-gradient(45deg,#ff6ec4,#7873f5);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.nav-links a{
+    color:#ddd;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:10px;
+    margin-left:10px;
+    transition:0.3s;
+}
+
+.nav-links a.active{
+    background:linear-gradient(45deg,#ff6ec4,#7873f5);
+    color:#fff;
+}
+
+.nav-links a:hover{
+    background:rgba(255,255,255,0.1);
+    color:#fff;
+}
+
+/* HERO */
+.hero{
+    width:90%;
+    margin:60px auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+}
+
+.hero-text h1{
+    font-size:48px;
+}
+
+.hero-text span{
+    font-weight:300;
+}
+
+.hero-text p{
+    margin:20px 0;
+    line-height:1.6;
+}
+
+.btn{
+    padding:12px 25px;
+    background:#2b2b2b;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.btn:hover{background:#000;}
+
+.hero img{
+    width:400px;
+    border-radius:15px;
+}
+
+/* SECTIONS */
+.section{
+    width:90%;
+    margin:60px auto;
+}
+
+.section h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.2);
+    padding:20px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:rgba(20,15,30,0.85);
+    color:#fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{flex-direction:column;text-align:center;}
+    .hero img{width:100%;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">
+        <i class="fa-solid fa-brain"></i> Summarix AI
+    </div>
+
+    <div class="nav-links">
+        <a href="/" class="active">Home</a>
+        <a href="/admin">Admin</a>
+        <a href="/login">Login</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Multimodal <span>Website Summarization</span></h1>
+        <p>
+            An intelligent transformer-based system that extracts, analyzes, and summarizes
+            text, images, and video content from websites to deliver concise and meaningful insights.
+        </p>
+        <button class="btn">Explore System</button>
+    </div>
+
+    <img src="../static/bg.png" alt="">
+</section>
+
+
+
+<!-- FOOTER -->
+<div class="footer">
+    © 2026 HiTech | Multimodal Summarization System
+</div>
+
+</body>
+</html>
